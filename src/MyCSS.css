@@ -1,0 +1,59 @@
+body {
+    background: linear-gradient(to right, orange 1%, yellow 100%);
+}
+
+.loading-wrapper {
+    width: 100%;
+    text-align: center;
+    margin-top: 200px;
+}
+
+#circle1 {
+    visibility: hidden;
+    animation: expand1 8s infinite;
+}
+
+#circle2{
+    visibility: hidden;
+    animation: expand1 8s infinite;
+    animation-delay: 1s;
+}
+
+#circle3{
+    visibility: hidden;
+    animation: expand1 8s infinite;
+    animation-delay: 3s;
+}
+
+#circle4 {
+    visibility: hidden;
+    animation: expand1 8s infinite;
+    animation-delay: 5s;
+}
+
+
+@keyframes expand1 {
+    0% {
+        visibility: visible;
+        transform: scale(0.1);
+        opacity: 0;
+        fill-opacity: 0;
+    }
+    30% {
+        visibility: visible;
+        opacity: 1.0;
+        fill-opacity: 1;
+    }
+    60% {
+        visibility: visible;
+        opacity: 1.0;
+        fill-opacity: 0.5;
+    }
+    100% {
+        visibility: visible;
+        transform: scale(1.5);
+        opacity: 0;
+        fill-opacity: 0;
+    }
+}
+
